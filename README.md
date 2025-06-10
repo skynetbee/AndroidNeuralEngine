@@ -21,7 +21,11 @@
 ```kotlin
 // Apply external build script
 apply(from = uri("https://raw.githubusercontent.com/skynetbee/AndroidNeuralEngine/main/build.gradle"))
+```
 
+## Requirements
+
+```kotlin
 android {
     defaultConfig {
         minSdk = 26          // 🚨 keep minSdk 26
