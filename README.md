@@ -21,7 +21,7 @@
 
 1. Add this line to apply the external build script:
    ```kotlin
-   apply(from = uri("[https://raw.githubusercontent.com/NithishaanandA/devCheck/main/build.gradle](https://raw.githubusercontent.com/skynetbee/AndroidNeuralEngine/main/build.gradle)"))
+   apply(from = uri("https://raw.githubusercontent.com/skynetbee/AndroidNeuralEngine/main/build.gradle"))
    ```
 
 2. Ensure your `minSdk` version is set to 26:
