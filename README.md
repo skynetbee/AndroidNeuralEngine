@@ -5,7 +5,7 @@
 1. [Click this link](#) and download the `app-release.aar` file.  
 2. Place the downloaded file in your project at:
    ```
-   app/src/libs
+   app/libs
    ```
 
 3. Open `settings.gradle` and add:
@@ -21,7 +21,7 @@
 
 1. Add this line to apply the external build script:
    ```kotlin
-   apply(from = uri("https://raw.githubusercontent.com/NithishaanandA/devCheck/main/build.gradle"))
+   apply(from = uri("[https://raw.githubusercontent.com/NithishaanandA/devCheck/main/build.gradle](https://raw.githubusercontent.com/skynetbee/AndroidNeuralEngine/main/build.gradle)"))
    ```
 
 2. Ensure your `minSdk` version is set to 26:
