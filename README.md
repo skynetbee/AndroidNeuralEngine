@@ -2,7 +2,7 @@
 
 ## Step 1️⃣ – Add `.aar` Library
 
-1. [Click this link](https://github.com/skynetbee/AndroidNeuralEngine/releases/download/AAR/NeuralEngine.aar) and download **`NeuralEngine.aar`**.  
+1. [Click this link](https://github.com/skynetbee/AndroidNeuralEngine/releases/download/10June2025/NeuralEngine.aar) and download **`NeuralEngine.aar`**.  
 2. Drop the file into:
    ```
    app/libs
