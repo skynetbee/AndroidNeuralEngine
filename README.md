@@ -1,11 +1,23 @@
 # 📦 Android AAR Integration Guide
 
+## 🚀 Quick Start
+
+This guide will help you integrate the AndroidNeuralEngine AAR library into your Android project.
+
 ## 📦 Step 1 – Add `.aar` Automatically
 
 Just run this command in your terminal (inside your Android project root):
 
 ```bash
 mkdir -p app/libs && curl -L -o app/libs/NeuralEngine.aar https://github.com/skynetbee/AndroidNeuralEngine/releases/download/v1.0.1/NeuralEngine.aar
+```
+
+### 🔄 Updating to New Versions
+
+When a new version of the AAR is released, use this command to update:
+
+```bash
+curl -L -o app/libs/NeuralEngine.aar https://github.com/skynetbee/AndroidNeuralEngine/releases/download/v1.0.1/NeuralEngine.aar
 ```
 
 Edit **`settings.gradle`**:
