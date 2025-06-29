@@ -1,13 +1,14 @@
 # 📦 Android AAR Integration Guide
 
-## Step 1️⃣ – Add `.aar` Library
+## 📦 Step 1 – Add `.aar` Automatically
 
-1. [Click this link](https://github.com/skynetbee/AndroidNeuralEngine/releases/download/21June2025/NeuralEngine.aar) and download **`NeuralEngine.aar`**.  
-2. Drop the file into:
-   ```
-   app/libs
-   ```
-3. Edit **`settings.gradle`**:
+Just run this command in your terminal (inside your Android project root):
+
+```bash
+mkdir -p app/libs && curl -L -o app/libs/NeuralEngine.aar https://github.com/skynetbee/AndroidNeuralEngine/releases/download/v1.0.1/NeuralEngine.aar
+```
+
+Edit **`settings.gradle`**:
    ```kotlin
    flatDir {
        dirs("app/libs")
